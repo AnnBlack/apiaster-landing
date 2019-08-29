@@ -1,0 +1,68 @@
+.background {
+  background: #061c31;
+  padding: 74px 0;
+}
+.wrapper {
+  width: 1200px;
+
+  margin: 0 auto;
+}
+.navigation,
+.navList,
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.navItem {
+  margin-right: 50px;
+  font-family: Verdana;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  color: #ffffff;
+  position: relative;
+}
+.navItem:hover span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #00cccc;
+  box-shadow: 0px 3.9322px 58.983px rgba(0, 255, 255, 0.35);
+}
+.navItem:last-child {
+  margin-right: 0;
+}
+.navItemButton {
+  width: 133px;
+  height: 50px;
+  left: 1427px;
+  top: 22px;
+
+  border: 1px solid #e56353;
+  box-sizing: border-box;
+
+  border-radius: 40px;
+  font-family: Verdana;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.signInLink {
+  position: relative;
+}
+
+.signInLink:after {
+  content: "/";
+  position: absolute;
+  left: 145%;
+  width: 2px;
+  height: 10px;
+  color: #ffffff;
+}
